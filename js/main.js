@@ -11,7 +11,7 @@ $(function ($) {
         }, function () {
             sett = setTimeout(function () {
                 $el.removeClass(el + '__active');
-            }, 2000);
+            }, 1000);
         })
     }
 
@@ -28,7 +28,7 @@ $(function ($) {
                 }
 
                 $this.parent().removeClass('b-header_search_field__active');
-            }, 2000);
+            }, 1000);
         });
 
         $('.b-header_search_icon').click(function () {
@@ -36,10 +36,12 @@ $(function ($) {
                 return false;
             }
         });
-
-
     }());
 
+
+    $('.js-index-slider').bxSlider({
+        pager: false
+    });
 
 
 
