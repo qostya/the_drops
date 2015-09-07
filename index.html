@@ -15,72 +15,78 @@
     <div class="b-header_top">
         <div class="container">
             <nav>
-                <ul class="nav nav__left navbar-nav col-md-10 col-sm-9">
-                    <li><a href="#"><span>О компании</span></a></li>
-                    <li><a href="#"><span>Доставка</span></a></li>
-                    <li><a href="#"><span>Оплата</span></a></li>
-                    <li><a href="#"><span>Контакты</span></a></li>
-                    <li class="b-header_search">
-                        <button type="submit" class="b-header_search_icon js-show-target" value=""></button>
-                        <div class="b-header_search_field js-show-element">
-                            <input type="text" placeholder="Поиск"/>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="nav nav__right navbar-nav navbar-right col-md-2 col-sm-3">
-                    <li class="fl-r">
-                        <span class="b-header_top_login-icon">
-                            <a href="">Вход</a> / <a href="">Регистрация</a>
-                        </span>
-                    </li>
-                </ul>
+                <div class="row">
+                    <ul class="nav nav__left navbar-nav col-md-10 col-sm-9">
+                        <li><a href="#"><span>О компании</span></a></li>
+                        <li><a href="#"><span>Доставка</span></a></li>
+                        <li><a href="#"><span>Оплата</span></a></li>
+                        <li><a href="#"><span>Контакты</span></a></li>
+                        <li class="b-header_search">
+                            <form action="/" method="get">
+                                <button type="submit" class="b-header_search_icon js-show-target" value=""></button>
+                                <div class="b-header_search_field js-show-element">
+                                    <input type="text" placeholder="Поиск"/>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="nav nav__right navbar-nav navbar-right col-md-2 col-sm-3">
+                        <li class="fl-r">
+                            <span class="b-header_top_login-icon">
+                                <a href="">Вход</a> / <a href="">Регистрация</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
 
     <div class="b-header_bottom">
         <div class="container">
-            <div class="col-md-2 col-xs-6">
-                <div class="b-header_phone">
-                    <div class="b-header_icon">
-                        <i class="icon__phone"></i>
-                    </div>
-                    <div class="b-header_phone_numbers">
-                        <a href="#">7 (546) 850-65-98</a><br/>
-                        <a href="#">7 (340) 875-32-52</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <div class="b-header_email">
-                    <div class="b-header_icon">
-                        <i class="icon__envelope"></i>
-                    </div>
-                    <div class="b-header_email_links">
-                        <a href="mailto:info@mamori.ru">info@mamori.ru</a>
+            <div class="row">
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_phone">
+                        <div class="b-header_icon">
+                            <i class="icon__phone"></i>
+                        </div>
+                        <div class="b-header_phone_numbers">
+                            <a href="#">7 (546) 850-65-98</a><br/>
+                            <a href="#">7 (340) 875-32-52</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="clearfix hidden-md hidden-lg"></div>
-            <div class="col-md-6 col-xs-6">
-                <div class="b-header_logo">
-                    <a href="#" class="b-header_logo_image">Mamori</a>
-                </div>
-                <div class="b-header_location">
-                    <i class="b-header_location_icon"></i>
-                    <span class="b-header_location_current-city">Хабаровск</span>
-                </div>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <div class="b-header_cart clearfix">
-                    <div class="b-header_cart_left">
-                        <i class="b-header_cart_icon"></i>
-                        <div class="b-header_cart_count">8</div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_email">
+                        <div class="b-header_icon">
+                            <i class="icon__envelope"></i>
+                        </div>
+                        <div class="b-header_email_links">
+                            <a href="mailto:info@mamori.ru">info@mamori.ru</a>
+                        </div>
                     </div>
-                    <div class="b-header_cart_right">
-                        <span class="b-header_cart_title">В КОРЗИНЕ</span>
-                        <div class="b-header_cart_price">
-                            <strong>980</strong> руб
+                </div>
+                <div class="clearfix hidden-md hidden-lg"></div>
+                <div class="col-md-6 col-xs-6">
+                    <div class="b-header_logo">
+                        <a href="#" class="b-header_logo_image">Mamori</a>
+                    </div>
+                    <div class="b-header_location">
+                        <i class="b-header_location_icon"></i>
+                        <span class="b-header_location_current-city">Хабаровск</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_cart clearfix">
+                        <div class="b-header_cart_left">
+                            <i class="b-header_cart_icon"></i>
+                            <div class="b-header_cart_count">8</div>
+                        </div>
+                        <div class="b-header_cart_right">
+                            <span class="b-header_cart_title">В КОРЗИНЕ</span>
+                            <div class="b-header_cart_price">
+                                <strong>980</strong> руб
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,88 +97,145 @@
 
 <div class="b-slider-wrapper">
     <div class="container">
-        <div class="b-slider">
-            <ul class="js-index-slider">
-                <li>
-                    <img src="http://placehold.it/940x390/E378A2/ffffff" alt=""/>
-                    <div class="b-slider_content">
-                        <div class="b-slider_delay">
-                            <div class="b-slider_delay_title">Скидка действует</div>
-                            <div class="b-slider_delay_counts">
-                                <div class="b-slider_delay_number">
-                                    <span>67</span>
-                                    <div class="b-slider_delay_type">дней</div>
-                                </div>
-                                <div class="b-slider_delay_number">
-                                    <span>19</span>
-                                    <div class="b-slider_delay_type">часов</div>
-                                </div>
-                                <div class="b-slider_delay_number">
-                                    <span>17</span>
-                                    <div class="b-slider_delay_type">минут</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="b-slider_buy">
-                            <a href="#" class="b-slider_buy_link">Купить</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="http://placehold.it/940x390/D3424C/ffffff" alt=""/>
-                    <div class="b-slider_content">
-                        <div class="b-slider_delay">
-                            <div class="b-slider_delay_title">Скидка действует</div>
-                            <div class="b-slider_delay_counts">
-                                <div class="b-slider_delay_number">
-                                    <span>67</span>
-                                    <div class="b-slider_delay_type">дней</div>
-                                </div>
-                                <div class="b-slider_delay_number">
-                                    <span>19</span>
-                                    <div class="b-slider_delay_type">часов</div>
-                                </div>
-                                <div class="b-slider_delay_number">
-                                    <span>17</span>
-                                    <div class="b-slider_delay_type">минут</div>
+        <div class="row">
+            <div class="b-slider">
+                <ul class="js-index-slider">
+                    <li>
+                        <img src="http://placehold.it/975x390/E378A2/ffffff" alt=""/>
+                        <div class="b-slider_content">
+                            <div class="b-slider_delay">
+                                <div class="b-slider_delay_title">Скидка действует</div>
+                                <div class="b-slider_delay_counts">
+                                    <div class="b-slider_delay_number">
+                                        <span>67</span>
+                                        <div class="b-slider_delay_type">дней</div>
+                                    </div>
+                                    <div class="b-slider_delay_number">
+                                        <span>19</span>
+                                        <div class="b-slider_delay_type">часов</div>
+                                    </div>
+                                    <div class="b-slider_delay_number">
+                                        <span>17</span>
+                                        <div class="b-slider_delay_type">минут</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="b-slider_buy">
-                            <a href="#" class="b-slider_buy_link">Купить</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="http://placehold.it/940x390/D19EAD/ffffff" alt=""/>
-                    <div class="b-slider_content">
-                        <div class="b-slider_delay">
-                            <div class="b-slider_delay_title">Скидка действует</div>
-                            <div class="b-slider_delay_counts">
-                                <div class="b-slider_delay_number">
-                                    <span>67</span>
-                                    <div class="b-slider_delay_type">дней</div>
-                                </div>
-                                <div class="b-slider_delay_number">
-                                    <span>19</span>
-                                    <div class="b-slider_delay_type">часов</div>
-                                </div>
-                                <div class="b-slider_delay_number">
-                                    <span>17</span>
-                                    <div class="b-slider_delay_type">минут</div>
-                                </div>
+                            <div class="b-slider_buy">
+                                <a href="#" class="b-slider_buy_link">Купить</a>
                             </div>
                         </div>
-                        <div class="b-slider_buy">
-                            <a href="#" class="b-slider_buy_link">Купить</a>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/975x390/D3424C/ffffff" alt=""/>
+                        <div class="b-slider_content">
+                            <div class="b-slider_delay">
+                                <div class="b-slider_delay_title">Скидка действует</div>
+                                <div class="b-slider_delay_counts">
+                                    <div class="b-slider_delay_number">
+                                        <span>67</span>
+                                        <div class="b-slider_delay_type">дней</div>
+                                    </div>
+                                    <div class="b-slider_delay_number">
+                                        <span>19</span>
+                                        <div class="b-slider_delay_type">часов</div>
+                                    </div>
+                                    <div class="b-slider_delay_number">
+                                        <span>17</span>
+                                        <div class="b-slider_delay_type">минут</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-slider_buy">
+                                <a href="#" class="b-slider_buy_link">Купить</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/975x390/D19EAD/ffffff" alt=""/>
+                        <div class="b-slider_content">
+                            <div class="b-slider_delay">
+                                <div class="b-slider_delay_title">Скидка действует</div>
+                                <div class="b-slider_delay_counts">
+                                    <div class="b-slider_delay_number">
+                                        <span>67</span>
+                                        <div class="b-slider_delay_type">дней</div>
+                                    </div>
+                                    <div class="b-slider_delay_number">
+                                        <span>19</span>
+                                        <div class="b-slider_delay_type">часов</div>
+                                    </div>
+                                    <div class="b-slider_delay_number">
+                                        <span>17</span>
+                                        <div class="b-slider_delay_type">минут</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-slider_buy">
+                                <a href="#" class="b-slider_buy_link">Купить</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
+<section class="b-index-content">
+    <div class="b-index-content_menu">
+        <div class="container">
+            <div class="row">
+                <ul class="b-content-menu clearfix">
+                    <li class="b-content-menu_item b-content-menu_item__first"><a href="#">Японские витамины</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__second"><a href="#">Японский коллаген</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__third"><a href="#">Капли для глаз</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__fourth js-has-dropdown">
+                        <a href="#">Косметика</a>
+                        <div class="b-content-menu_dropdown js-dropdown">
+                            <ul>
+                                <li><a href="#">Уход за лицом</a></li>
+                                <li><a href="#">Уход за телом</a></li>
+                                <li><a href="#">Уход за волосами</a></li>
+                                <li><a href="#">Декоративная косметика</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-index-content_services">
+        <div class="container">
+            <div class="row">
+                <ul class="b-content-services clearfix">
+                    <li class="col-md-3">
+                        <div class="b-content-services_icon b-content-services_icon_tree"></div>
+                        <div class="b-content-services_title">Японское качество</div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="b-content-services_icon b-content-services_icon_year"></div>
+                        <div class="b-content-services_title">5 лет на рынке</div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="b-content-services_icon b-content-services_icon_price"></div>
+                        <div class="b-content-services_title">Доступные цены</div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="b-content-services_icon b-content-services_icon_delivery"></div>
+                        <div class="b-content-services_title">Доставка в любую точку мира</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b-index-content_products">
+
+    </div>
+
+</section>
 
 
 
