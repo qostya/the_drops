@@ -25,6 +25,37 @@ body {
     color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.b-header_top_login-icon {
+    position: relative;
+}
+
+.b-header_search {
+    width: 40px;
+    height: 40px;
+    position: absolute!important;
+    top: 0;
+    right: 34px;
+    background: #62871A;
+}
+
+.b-header_top_login-icon:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 10px;
+    left: -17px;
+    -webkit-box-shadow: 0 0 20px 5px #fff;
+    -moz-box-shadow: 0 0 20px 5px #fff;
+    box-shadow: 0 0 20px 5px #fff;
+}
+
+.nav__right:hover .b-header_top_login-icon:after {
+    display: block;
 }
 
 .nav__left {
@@ -44,6 +75,26 @@ body {
 
 .nav__right {
     white-space: nowrap;
+    color: #fff;
+}
+
+.nav__right:before {
+    content: '';
+    background: #D73F3C;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    top: 0;
+    left: -50px;
+}
+
+.nav__right a {
+    border-bottom: 1px solid #F3D0D0;
+    line-height: 16px;
+    display: inline-block;
+    height: 16px;
+    color: #fff;
 }
 
 .nav__left span {
@@ -70,9 +121,8 @@ body {
 }
 
 .b-header_bottom {
-    margin-top: 20px;
+    margin-top: 15px;
 }
-
 
 .b-header_icon {
     line-height: 42px;
@@ -139,9 +189,13 @@ div:hover > div > i:before {
     text-indent: -9999px;
 }
 
+.b-header_logo {
+    padding-left: 30px;
+}
+
 .b-header_location {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 90px;
     cursor: pointer;
 }
 
@@ -156,6 +210,89 @@ div:hover > div > i:before {
 div:hover >  .b-header_location_current-city {
     text-decoration: underline;
 }
+
+.b-header_cart {
+    margin-left: -50px;
+    margin-right: -15px;
+    background: #8ab734;
+    color: #fff;
+    font-weight: 300;
+
+}
+
+.b-header_cart_left {
+    position: relative;
+    float: left;
+    width: 35%;
+    height: 68px;
+}
+
+.b-header_cart_right {
+    position: relative;
+    float: left;
+    width: 65%;
+    height: 68px;
+    padding-top: 15px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.b-header_cart_title {
+    font-size: 15px;
+}
+
+.b-header_cart_price {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.b-header_cart_price strong {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.b-header_cart_count {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 13px;
+    line-height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    background: #333;
+    text-align: center;
+    font-weight: 700;
+}
+
+.b-header_search_field {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 40px;
+    width: 0;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.b-header_search_field input {
+    line-height: 30px;
+    padding: 0 7px;
+    width: 147px;
+}
+
+.b-header_search_field.js-show-element__active,
+.b-header_search_field__active {
+    width: 150px;
+}
+
+
 
 
 
@@ -174,8 +311,44 @@ div:hover >  .b-header_location_current-city {
     }
 }
 
+@media (max-width: 992px) {
+    .b-header_cart {
+        max-width: 264px;
+        font-weight: 300;
+        margin: auto;
+    }
+}
 
+@media (max-width: 768px) {
+    .b-header_search {
+        bottom: -48px;
+        top: auto;
+        right: auto;
+        left: 10px;
+        z-index: 2;
+    }
 
+    .b-header_search_field.js-show-element__active,
+    .b-header_search_field__active {
+        right: auto;
+        left: 52px;
+    }
+}
+
+@media (max-width: 625px) {
+    .b-header_bottom > .container > div {
+        width: 100%;
+    }
+
+    .b-header_logo {
+        padding: 0;
+    }
+
+    .b-header_logo_image {
+        margin: 0 auto;
+    }
+
+}
 
 
 

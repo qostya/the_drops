@@ -15,14 +15,24 @@
     <div class="b-header_top">
         <div class="container">
             <nav>
-                <ul class="nav nav__left navbar-nav col-md-10">
+                <ul class="nav nav__left navbar-nav col-md-10 col-sm-9">
                     <li><a href="#"><span>О компании</span></a></li>
-                    <li><a href=""><span>Доставка</span></a></li>
+                    <li><a href="#"><span>Доставка</span></a></li>
                     <li><a href="#"><span>Оплата</span></a></li>
-                    <li><a href=""><span>Контакты</span></a></li>
+                    <li><a href="#"><span>Контакты</span></a></li>
+                    <li class="b-header_search">
+                        <button type="submit" class="b-header_search_icon js-show-target" value=""></button>
+                        <div class="b-header_search_field js-show-element">
+                            <input type="text" placeholder="Поиск"/>
+                        </div>
+                    </li>
                 </ul>
-                <ul class="nav nav__right navbar-nav navbar-right col-md-2">
-                    <li class="fl-r"><a href="">Вход/Регистрация</a></li>
+                <ul class="nav nav__right navbar-nav navbar-right col-md-2 col-sm-3">
+                    <li class="fl-r">
+                        <span class="b-header_top_login-icon">
+                            <a href="">Вход</a> / <a href="">Регистрация</a>
+                        </span>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +40,7 @@
 
     <div class="b-header_bottom">
         <div class="container">
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-6">
                 <div class="b-header_phone">
                     <div class="b-header_icon">
                         <i class="icon__phone"></i>
@@ -41,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-6">
                 <div class="b-header_email">
                     <div class="b-header_icon">
                         <i class="icon__envelope"></i>
@@ -51,7 +61,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="clearfix hidden-md hidden-lg"></div>
+            <div class="col-md-6 col-xs-6">
                 <div class="b-header_logo">
                     <a href="#" class="b-header_logo_image">Mamori</a>
                 </div>
@@ -60,7 +71,20 @@
                     <span class="b-header_location_current-city">Хабаровск</span>
                 </div>
             </div>
-            <div class="col-md-2">wer</div>
+            <div class="col-md-2 col-xs-6">
+                <div class="b-header_cart clearfix">
+                    <div class="b-header_cart_left">
+                        <i class="b-header_cart_icon"></i>
+                        <div class="b-header_cart_count">8</div>
+                    </div>
+                    <div class="b-header_cart_right">
+                        <span class="b-header_cart_title">В КОРЗИНЕ</span>
+                        <div class="b-header_cart_price">
+                            <strong>980</strong> руб
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -72,5 +96,6 @@
 <script src="js/vendor/jquery/dist/jquery.min.js"></script>
 <script src="js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/vendor/bxslider-4/dist/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
