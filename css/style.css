@@ -31,7 +31,19 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;
+    background: transparent;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
 }
+
+.b-header_top .navbar-nav li:hover > a {
+    background: #62871A;
+}
+
+
 
 .b-header_top_login-icon {
     position: relative;
@@ -425,11 +437,11 @@ div:hover >  .b-header_location_current-city {
     display: block;
     text-decoration: none;
     background: transparent;
-    -webkit-transition: background 0.3s;
-    -moz-transition: background 0.3s;
-    -ms-transition: background 0.3s;
-    -o-transition: background 0.3s;
-    transition: background 0.3s;
+    -webkit-transition: background 0.3s, color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s;
+    -ms-transition: background 0.3s, color 0.3s;
+    -o-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 .b-content-menu_item.js-has-dropdown__active > a,
