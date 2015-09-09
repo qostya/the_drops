@@ -554,17 +554,114 @@ li:hover > .b-content-services_icon:before {
 .b-index-content_products {
     min-height: 100px;
     background: #E6EFD6;
+    padding: 40px 0;
+
+}
+
+.b-product-item {
+    background: #fff;
+}
+
+.b-product-item_image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.b-product-item_description {
+    height: 95px;
+    padding: 6px 10px;
+    font-weight: normal;
+    overflow: hidden;
+    position: relative;
+}
+
+.b-product-item_description:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -65px;
+    left: 29%;
+    width: 80px;
+    height: 30px;
+    background: #8ab734;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.b-product-item:hover .b-product-item_description:before {
+    -webkit-transform: scale(14);
+    -moz-transform: scale(14);
+    -ms-transform: scale(14);
+    -o-transform: scale(14);
+    transform: scale(14);
+}
+
+.b-product-item_description > div {
+    position: relative;
+    z-index: 2;
 }
 
 
+.b-product-item_description span {
+    color: #7a7a7a;
+    font-size: 14px;
+}
 
+.b-product-item_description h5 {
+    color: #286804;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 3px 0;
+    line-height: 18px;
+}
 
+.b-product-item_description small {
+    color: #000;
+    font-size: 12px;
+}
 
+.b-product-item:hover .b-product-item_description span {
+    color: #e3fbb4;
+}
 
+.b-product-item:hover .b-product-item_description h5 {
+    color: #fff;
+}
 
+.b-product-item:hover .b-product-item_description small {
+    color: #32460b;
+}
 
+.b-product-item * {
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}
 
+.b-product-item_price {
+    color: #547711;
+    padding: 3px 10px 0;
+    line-height: 62px;
+    font-size: 17px;
+    font-weight: 300;
+}
 
+.b-product-item_price strong {
+    font-weight: 500;
+}
+
+.b-product-item_bottom {
+    position: relative;
+}
 
 
 
