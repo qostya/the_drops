@@ -491,7 +491,7 @@ div:hover >  .b-header_location_current-city {
 .b-content-menu_dropdown li a {
     display: block;
     padding: 6px 18px;
-    line-height: 1.5;
+    line-height: 24px;
     color: #000;
     background: #fff;
     font-weight: 300;
@@ -772,16 +772,105 @@ li:hover > .b-content-services_icon:before {
     font-size: 30px;
     color: #242424;
     font-weight: 300;
-    padding: 9px 40px;
+    padding: 7px 40px 9px;
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
+    border-top: 3px solid transparent;
+    position: relative;
+    -webkit-transition: background 0.3s, color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s;
+    -ms-transition: background 0.3s, color 0.3s;
+    -o-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 .b-product-slider-titles .__active {
     color: #fff;
     background: #8ab734;
+    border-top-color: #719c1e;
 }
+
+.b-product-slider-titles a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    bottom: -17px;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -ms-transition: border-color 0.3s;
+    -o-transition: border-color 0.3s;
+    transition: border-color 0.3s;
+
+}
+
+.b-product-slider-titles .__active:before {
+    border-top-color: #8ab734;
+}
+
+.b-index-about {
+    font-weight: 300;
+    color: #141414;
+    font-size: 16px;
+    clear: both;
+}
+
+.b-index-about_title {
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.b-index-about_more {
+    color: #141414;
+    background: #f0f6e7;
+    padding: 8px 33px 7px;
+    border: 1px solid #8ab734;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.b-index-about_more:hover {
+    background: #8ab734;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
