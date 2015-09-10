@@ -40,10 +40,50 @@ $(function ($) {
         });
     }());
 
-
     $('.js-index-slider').bxSlider({
         pager: false
     });
+
+    (function () {
+        var productSlider = $('.js-product-slider').bxSlider({
+                pager: false,
+                nextText: '&#10095;',
+                prevText: '&#10094;',
+                speed: 400,
+                onSlideNext: function ($slEl, oldId, newId) {
+                    $('.js-slide-to').each(function () {
+                        var $this = $(this);
+                        if ($this.data('slideTo') === newId) {
+                            $this.addClass('__active');
+                        } else {
+                            $this.removeClass('__active');
+                        }
+                    });
+                },
+                onSlidePrev: function ($slEl, oldId, newId) {
+                    $('.js-slide-to').each(function () {
+                        var $this = $(this);
+                        if ($this.data('slideTo') === newId) {
+                            $this.addClass('__active');
+                        } else {
+                            $this.removeClass('__active');
+                        }
+                    });
+                }
+            }),
+            sett = false;
+
+
+        $('.js-slide-to').click(function () {
+            var $this = $(this);
+            productSlider.goToSlide($this.data('slideTo'));
+            $this.siblings().removeClass('__active');
+            $this.addClass('__active');
+            return false;
+        });
+
+    }());
+
 
 
     (function () {

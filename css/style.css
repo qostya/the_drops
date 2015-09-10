@@ -718,7 +718,70 @@ li:hover > .b-content-services_icon:before {
     transform: rotate(50deg);
 }
 
+.b-index-content_products .bx-wrapper {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 
+
+
+.b-index-content_products .bx-wrapper .bx-controls-direction a {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    float: left;
+    display: block;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin-top: 0;
+    text-indent: 18px;
+    font-size: 17px;
+    line-height: 44px;
+    color: #fff;
+    text-decoration: none;
+    background: #403f3d;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -ms-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+
+.b-index-content_products .bx-wrapper .bx-controls-direction a:hover {
+    background: #8ab734;
+}
+
+.b-index-content_products .bx-controls-direction {
+    position: relative;
+    width: 88px;
+    margin: 0 auto;
+    height: 44px;
+}
+
+.b-product-slider-titles {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.b-product-slider-titles a {
+    font-size: 30px;
+    color: #242424;
+    font-weight: 300;
+    padding: 9px 40px;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.b-product-slider-titles .__active {
+    color: #fff;
+    background: #8ab734;
+}
 
 
 
