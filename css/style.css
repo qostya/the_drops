@@ -578,6 +578,7 @@ li:hover > .b-content-services_icon:before {
     font-weight: normal;
     overflow: hidden;
     position: relative;
+    margin-left: -0.4px;
 }
 
 .b-product-item_description:before {
@@ -687,6 +688,7 @@ li:hover > .b-content-services_icon:before {
     width: 40px;
     height: 80px;
     overflow: hidden;
+    margin-left: -0.3px;
 }
 
 .b-product-item_angle {
@@ -756,7 +758,6 @@ li:hover > .b-content-services_icon:before {
 }
 
 .b-index-content_products .bx-wrapper .bx-controls-direction a:hover {
-    background: #8ab734;
 }
 
 .b-index-content_products .bx-controls-direction {
@@ -834,19 +835,65 @@ li:hover > .b-content-services_icon:before {
     background: #f0f6e7;
     padding: 8px 33px 7px;
     border: 1px solid #8ab734;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     margin-top: 20px;
     display: inline-block;
 }
 
+.css__slide-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.css__slide-animation:after {
+    content:"";
+    position:absolute;
+    width:120%;
+    height:100%;
+    left:-10%;
+    top:0;
+    -moz-transform:translate(-110%, 0) skew(-20deg);
+    -ms-transform:translate(-110%, 0) skew(-20deg);
+    -webkit-transform:translate(-110%, 0) skew(-20deg);
+    transform:translate(-110%, 0) skew(-20deg);
+    background:#8ab734;
+    z-index:1;
+    -webkit-animation:outHover 0.5s ease 1 forwards;
+    -moz-animation:outHover 0.5s ease 1 forwards;
+    -o-animation:outHover 0.5s ease 1 forwards;
+    animation:outHover 0.5s ease 1 forwards;
+}
+
+.css__slide-animation:hover:after{
+     -webkit-animation-name:onHover;
+     -moz-animation-name:onHover;
+     -o-animation-name:onHover;
+     -ms-animation-name:onHover;
+     animation-name:onHover;
+ }
+
+.css__slide-animation span {
+    position: relative;
+    z-index: 2;
+}
+
 .b-index-about_more:hover {
-    background: #8ab734;
     color: #fff;
     text-decoration: none;
+}
+
+.bx-controls-direction .css__slide-animation:after {
+    width: 62px;
+    left: -10px;
+}
+
+.b-footer_sitename {
+    font-weight: 300;
+    margin-bottom: 5px;
 }
 
 
@@ -879,13 +926,74 @@ li:hover > .b-content-services_icon:before {
 
 
 
-
-
-
-
-
-
-
+@-moz-keyframes onHover {
+    from {
+        -moz-transform: translate(-110%, 0) skew(-20deg);
+        transform: translate(-110%, 0) skew(-20deg)
+    }
+    to {
+        -moz-transform: translate(0, 0) skew(-20deg);
+        transform: translate(0, 0) skew(-20deg)
+    }
+}
+@-webkit-keyframes onHover {
+    from {
+        -webkit-transform: translate(-110%, 0) skew(-20deg);
+        transform: translate(-110%, 0) skew(-20deg)
+    }
+    to {
+        -webkit-transform: translate(0, 0) skew(-20deg);
+        transform: translate(0, 0) skew(-20deg)
+    }
+}
+@keyframes onHover {
+    from {
+        -moz-transform: translate(-110%, 0) skew(-20deg);
+        -ms-transform: translate(-110%, 0) skew(-20deg);
+        -webkit-transform: translate(-110%, 0) skew(-20deg);
+        transform: translate(-110%, 0) skew(-20deg)
+    }
+    to {
+        -moz-transform: translate(0, 0) skew(-20deg);
+        -ms-transform: translate(0, 0) skew(-20deg);
+        -webkit-transform: translate(0, 0) skew(-20deg);
+        transform: translate(0, 0) skew(-20deg)
+    }
+}
+@-moz-keyframes outHover {
+    from {
+        -moz-transform: translate(0, 0) skew(-20deg);
+        transform: translate(0, 0) skew(-20deg)
+    }
+    to {
+        -moz-transform: translate(110%, 0) skew(-20deg);
+        transform: translate(110%, 0) skew(-20deg)
+    }
+}
+@-webkit-keyframes outHover {
+    from {
+        -webkit-transform: translate(0, 0) skew(-20deg);
+        transform: translate(0, 0) skew(-20deg)
+    }
+    to {
+        -webkit-transform: translate(110%, 0) skew(-20deg);
+        transform: translate(110%, 0) skew(-20deg)
+    }
+}
+@keyframes outHover {
+    from {
+        -moz-transform: translate(0, 0) skew(-20deg);
+        -ms-transform: translate(0, 0) skew(-20deg);
+        -webkit-transform: translate(0, 0) skew(-20deg);
+        transform: translate(0, 0) skew(-20deg)
+    }
+    to {
+        -moz-transform: translate(110%, 0) skew(-20deg);
+        -ms-transform: translate(110%, 0) skew(-20deg);
+        -webkit-transform: translate(110%, 0) skew(-20deg);
+        transform: translate(110%, 0) skew(-20deg)
+    }
+}
 
 
 

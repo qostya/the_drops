@@ -47,8 +47,8 @@ $(function ($) {
     (function () {
         var productSlider = $('.js-product-slider').bxSlider({
                 pager: false,
-                nextText: '&#10095;',
-                prevText: '&#10094;',
+                nextText: '<span>&#10095;</span>',
+                prevText: '<span>&#10094;</span>',
                 speed: 400,
                 onSlideNext: function ($slEl, oldId, newId) {
                     $('.js-slide-to').each(function () {
@@ -69,6 +69,9 @@ $(function ($) {
                             $this.removeClass('__active');
                         }
                     });
+                },
+                onSliderLoad: function () {
+                    $('.b-index-content_products .bx-controls-direction a').addClass('css__slide-animation');
                 }
             }),
             sett = false;
