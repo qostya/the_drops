@@ -155,26 +155,29 @@ body {
 
 .b-header_icon i:before {
     content: '';
-    display: none;
+    display: block;
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 42px;
+    height: 42px;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #8ab734;
+    background: transparent;
     z-index: -1;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
 }
 
 div:hover > div > i:before {
-    display: block;
-    width: 42px;
-    height: 42px;
+    background: #8ab734;
 }
 
 .b-header_phone_numbers {
