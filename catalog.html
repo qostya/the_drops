@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="js/vendor/bxslider-4/dist/jquery.bxslider.min.css"/>
+    <link rel="stylesheet" href="css/inline-images.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+
+<header class="b-header">
+    <div class="b-header_top">
+        <div class="container">
+            <nav>
+                <div class="row">
+                    <ul class="nav nav__left navbar-nav col-md-10 col-sm-9">
+                        <li><a href="#" class="css__slide-animation"><span>О компании</span></a></li>
+                        <li><a href="#"class="css__slide-animation"><span>Доставка</span></a></li>
+                        <li><a href="#"class="css__slide-animation"><span>Оплата</span></a></li>
+                        <li><a href="#"class="css__slide-animation"><span>Контакты</span></a></li>
+                        <li class="b-header_search">
+                            <form action="/" method="get">
+                                <button type="submit" class="b-header_search_icon js-show-target" value=""></button>
+                                <div class="b-header_search_field js-show-element">
+                                    <input type="text" placeholder="Поиск"/>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="nav nav__right navbar-nav navbar-right col-md-2 col-sm-3">
+                        <li class="fl-r">
+                            <span class="b-header_top_login-icon">
+                                <a href="">Вход</a> / <a href="">Регистрация</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="b-header_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_phone">
+                        <div class="b-header_icon">
+                            <i class="icon__phone"></i>
+                        </div>
+                        <div class="b-header_phone_numbers">
+                            <a href="#">7 (546) 850-65-98</a><br/>
+                            <a href="#">7 (340) 875-32-52</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_email">
+                        <div class="b-header_icon">
+                            <i class="icon__envelope"></i>
+                        </div>
+                        <div class="b-header_email_links">
+                            <a href="mailto:info@mamori.ru">info@mamori.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix hidden-md hidden-lg"></div>
+                <div class="col-md-6 col-xs-6">
+                    <div class="b-header_logo">
+                        <a href="#" class="b-header_logo_image">Mamori</a>
+                    </div>
+                    <div class="b-header_location">
+                        <i class="b-header_location_icon"></i>
+                        <span class="b-header_location_current-city">Хабаровск</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_cart clearfix">
+                        <div class="b-header_cart_left">
+                            <i class="b-header_cart_icon"></i>
+                            <div class="b-header_cart_count">8</div>
+                        </div>
+                        <div class="b-header_cart_right">
+                            <span class="b-header_cart_title">В КОРЗИНЕ</span>
+                            <div class="b-header_cart_price">
+                                <strong>980</strong> руб
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="b-catalog-content">
+    <div class="b-catalog-content_menu">
+        <div class="container">
+            <div class="row">
+                <ul class="b-content-menu clearfix">
+                    <li class="b-content-menu_item b-content-menu_item__first"><a href="#">Японские витамины</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__second"><a href="#">Японский коллаген</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__third"><a href="#">Капли для глаз</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__fourth js-has-dropdown">
+                        <a href="#">Косметика</a>
+                        <div class="b-content-menu_dropdown js-dropdown">
+                            <ul>
+                                <li><a href="#">Уход за лицом</a></li>
+                                <li><a href="#">Уход за телом</a></li>
+                                <li><a href="#">Уход за волосами</a></li>
+                                <li><a href="#">Декоративная косметика</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-content_products">
+        <div class="container">
+            <div class="row">
+
+                <div class="b-catalog-header clearfix">
+                    <div class="col-md-6">
+                        <div class="b-catalog-header_breadcrumbs">
+                            <span class="b-catalog-header_title">Каталог</span>
+                            <a href="#">Главная</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="b-catalog-header_date">
+                            <strong>11</strong><br/>
+                            <span>сентября</span>
+                            <div>
+                                Дата поступления<br/>
+                                заказанной<br/>
+                                продукции
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="b-catalog-header_count js-hovered-parent">
+                            <div class="b-catalog-header_count_number">
+                                <span>40</span>
+                            </div>
+                            <div class="b-catalog-header_count_dropdown js-hovered-parent_dropdown">
+                                <ul>
+                                    <li><a href="#" class="css__slide-animation"><span>10</span></a></li>
+                                    <li><a href="#" class="css__slide-animation"><span>20</span></a></li>
+                                    <li><a href="#" class="css__slide-animation"><span>30</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <img src="images/static/220x175.png" alt=""/>
+                            <div class="b-product-item_stars">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <i class="b-product-item_show-icon"></i>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag">Косметология</span>
+                                <h5>Orihiro Глюкозамин в виде порошка</h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+
+                            <div class="b-product-item_cart"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="b-index-about">
+                    <div class="col-md-3 col-xs-4">
+                        <img src="images/static/about-image.png" alt="О компании Mamori"/>
+                    </div>
+
+                    <div class="col-md-9 col-xs-8">
+                        <h1 class="b-index-about_title">О компании</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugiat odio quas quo unde voluptate! Ab cupiditate deserunt earum, fugiat harum magnam nulla placeat possimus quae quia sequi voluptas voluptates.</p>
+                        <a href="#" class="b-index-about_more css__slide-animation"><span>ПОДРОБНЕЕ</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="b-footer">
+    <div class="b-footer_bg-1 hidden-xs"></div>
+    <div class="b-footer_bg-2 hidden-xs"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <h3 class="b-footer_sitename">mamori.ru</h3>
+                <span>© 2015 все права защищены</span>
+
+                <div class="b-footer_phones clearfix">
+                    <div class="b-footer_phone-icon"></div>
+                    <div class="b-footer_phone-numbers">
+                        <a href="#">7 (546) 850-65-98</a>
+                        <br/>
+                        <a href="#">7 (340) 875-32-52</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="b-footer_pay">
+                    Способы оплаты:
+                    <div class="b-footer_pay-methods clearfix">
+                        <a href="#" class="b-footer_icon b-footer_icon__visa"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__master-card"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__visa-election"></a>
+                        <div class="clearfix"></div>
+                        <a href="#" class="b-footer_icon b-footer_icon__yandex-money"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__web-money"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__paypal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="http://web-alt.ru" target="_blank" class="b-footer_studio">
+                    Сайт разработан <br/>
+                    WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/vendor/jquery/dist/jquery.min.js"></script>
+<script src="js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/vendor/bxslider-4/dist/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

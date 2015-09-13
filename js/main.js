@@ -15,6 +15,23 @@ $(function ($) {
         })
     }
 
+    function showChildByHoveredParent(prntClass, chldClass) {
+        var $prntClass = $('.' + prntClass),
+            $chldClass = $prntClass.find('.' + chldClass),
+            sett;
+
+        $prntClass.hover(function () {
+            clearTimeout(sett);
+            $chldClass.slideDown('fast');
+        }, function () {
+            sett = setTimeout(function () {
+                $chldClass.slideUp('fast');
+            }, 1000);
+        })
+    }
+
+    showChildByHoveredParent('js-hovered-parent', 'js-hovered-parent_dropdown');
+
     (function () {
         var sett;
         $('.b-header_search_field input').focus(function () {
@@ -72,10 +89,9 @@ $(function ($) {
                     });
                 },
                 onSliderLoad: function () {
-                    $('.b-index-content_products .bx-controls-direction a').addClass('css__slide-animation');
+                    $('.b-content_products .bx-controls-direction a').addClass('css__slide-animation');
                 }
-            }),
-            sett = false;
+            });
 
 
         $('.js-slide-to').click(function () {
