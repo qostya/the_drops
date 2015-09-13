@@ -1106,10 +1106,6 @@ li:hover > .b-content-services_icon:before {
     font-size: 24px;
 }
 
-.b-catalog-content .b-index-about {
-    margin-top: 40px;
-}
-
 .b-catalog-header_count_dropdown {
     position: absolute;
     display: none;
@@ -1141,6 +1137,63 @@ li:hover > .b-content-services_icon:before {
 .b-catalog-header_count_dropdown .css__slide-animation:after {
     background: #719c1e;
 }
+
+.b-catagog-content_pagination {
+    clear: both;
+    text-align: center;
+    font-size: 0;
+}
+
+.b-catagog-content_pagination li:first-child,
+.b-catagog-content_pagination li:last-child{
+    background: #403f3d;
+}
+
+.b-catagog-content_pagination ul {
+    padding: 0;
+    margin: 0;
+}
+
+.b-catagog-content_pagination li {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    background: #52514f;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.b-catagog-content_pagination a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.b-catagog-content_pagination .css__slide-animation:after {
+    background: #8ab734;
+    width: 62px;
+    left: -10px;
+}
+
+.b-left-catalog-links {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
