@@ -50,6 +50,7 @@ $(function ($) {
                 nextText: '<span>&#10095;</span>',
                 prevText: '<span>&#10094;</span>',
                 speed: 400,
+                adaptiveHeight: true,
                 onSlideNext: function ($slEl, oldId, newId) {
                     $('.js-slide-to').each(function () {
                         var $this = $(this);
