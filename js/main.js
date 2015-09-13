@@ -62,6 +62,18 @@ $(function ($) {
     });
 
     (function () {
+        $('.js-open-left-panel').click(function () {
+            var $el = $('.b-left-catalog-links');
+            if (!$el.hasClass('b-left-catalog-links__active')) {
+                $el.addClass('b-left-catalog-links__active');
+            } else {
+                $el.removeClass('b-left-catalog-links__active');
+            }
+
+        });
+    }());
+
+    (function () {
         var productSlider = $('.js-product-slider').bxSlider({
                 pager: false,
                 nextText: '<span>&#10095;</span>',

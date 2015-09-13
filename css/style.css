@@ -1179,11 +1179,88 @@ li:hover > .b-content-services_icon:before {
 }
 
 .b-left-catalog-links {
-
+    position: fixed;
+    top: 100px;
+    left: -198px;
+    width: 240px;
+    padding-right: 42px;
+    z-index: 10;
+    min-height: 180px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 11px -1px #696969;
+    -moz-box-shadow: 0 0 11px -1px #696969;
+    box-shadow: 0 0 11px -1px #696969;
+    -webkit-transition: left 0.4s;
+    -moz-transition: left 0.4s;
+    -ms-transition: left 0.4s;
+    -o-transition: left 0.4s;
+    transition: left 0.4s;
 }
 
+.b-left-catalog-links__active {
+    left: 0;
+}
 
+.b-left-catalog-links ul {
+    padding: 0;
+    margin: 0;
+}
 
+.b-left-catalog-links li {
+    list-style-type: none;
+}
+
+.b-left-catalog-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px 3px 5px 25px;
+    display: block;
+}
+
+.b-left-catalog-links a:hover {
+    background: #8ab734;
+    color: #fff;
+}
+
+.b-left-catalog-links_button {
+    position: absolute;
+    width: 42px;
+    height: 100%;
+    background: #d73f3c;
+    top: 0;
+    right: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.b-left-catalog-links_button span {
+    letter-spacing: -3px;
+    position: absolute;
+    top: 90px;
+    left: 12px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.b-left-catalog-links_button > div {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 175px;
+    left: -48px;
+    font-weight: 300;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.b-left-catalog-links__current a {
+    color: #8ab734;
+}
 
 
 
