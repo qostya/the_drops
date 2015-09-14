@@ -1190,11 +1190,16 @@ li:hover > .b-content-services_icon:before {
     -webkit-box-shadow: 0 0 11px -1px #696969;
     -moz-box-shadow: 0 0 11px -1px #696969;
     box-shadow: 0 0 11px -1px #696969;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -ms-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: left 0.3s linear;
+    -moz-transition: left 0.3s linear;
+    -ms-transition: left 0.3s linear;
+    -o-transition: left 0.3s linear;
+    transition: left 0.3s linear;
+    -webkit-transform: rotate3d(0);
+    -moz-transform: rotate3d(0);
+    -ms-transform: rotate3d(0);
+    -o-transform: rotate3d(0);
+    transform: rotate3d(0);
 }
 
 .b-left-catalog-links__active {
@@ -1235,13 +1240,27 @@ li:hover > .b-content-services_icon:before {
     cursor: pointer;
 }
 
+.b-left-catalog-links__active .b-left-catalog-links_button span {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 12px;
+}
+
 .b-left-catalog-links_button span {
     letter-spacing: -3px;
     position: absolute;
     top: 90px;
-    left: 12px;
+    left: 17px;
     font-size: 17px;
     font-weight: 800;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .b-left-catalog-links_button > div {
