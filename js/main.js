@@ -99,9 +99,6 @@ $(function ($) {
                             $this.removeClass('__active');
                         }
                     });
-                },
-                onSliderLoad: function () {
-                    $('.b-content_products .bx-controls-direction a').addClass('css__slide-animation');
                 }
             });
 
@@ -116,6 +113,17 @@ $(function ($) {
 
     }());
 
+
+
+    $('body').on('click', function(ev) {
+        if (!$(ev.target).parents('.b-header_cart').length) {
+            $('.b-header_cart').removeClass('b-header_cart__active').find('.b-cart_bottom').slideUp('fast');
+        }
+    });
+
+    $('.b-header_cart').mouseenter(function() {
+        $(this).addClass('b-header_cart__active').find('.b-cart_bottom').slideDown('fast');
+    });
 
 
     (function () {
