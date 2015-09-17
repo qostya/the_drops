@@ -2027,11 +2027,31 @@ li:hover > .b-content-services_icon:before {
         padding-left: 15px;
         text-align: center;
     }
+
+    .b-left-recomendation {
+        width: 50%;
+        float: left;
+        border-left: 10px solid #E6EFD6;
+        border-right: 10px solid #E6EFD6;
+    }
+
+    .b-catalog-content_menu {
+        line-height: 35px;
+    }
+    .b-content-menu_item > a {
+        min-height: 70px;
+    }
 }
 
 @media (max-width: 625px) {
     .b-header_bottom > .container > div {
         width: 100%;
+    }
+
+    .b-left-recomendation {
+        width: 100%;
+        float: none;
+        border: none;
     }
 
     .b-header_logo {
