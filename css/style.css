@@ -2009,6 +2009,14 @@ li:hover > .b-content-services_icon:before {
         z-index: 2;
     }
 
+    .nav__right .fl-r {
+        margin-right: 10px;
+    }
+
+    .b-header_search {
+        margin-left: 10px;
+    }
+
     .b-header_search_field.js-show-element__active,
     .b-header_search_field__active {
         right: auto;
