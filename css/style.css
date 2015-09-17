@@ -1329,10 +1329,15 @@ li:hover > .b-content-services_icon:before {
     background: #8ab734;
     white-space: nowrap;
     padding: 7px 8px;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
 }
 
 .b-cart-table_count input {
-    width: 34px;
+    width: 20px;
     height: 20px;
     border: none;
     outline: none;
@@ -1352,11 +1357,12 @@ li:hover > .b-content-services_icon:before {
 .b-cart-table_actions i {
     display: block;
     width: 18px;
-    height: 16px;
+    height: 17px;
     text-align: center;
     line-height: 16px;
     background: #8ab734;
     font-style: normal;
+    text-indent: -1px;
 }
 
 .b-cart-table_remove {
@@ -1398,6 +1404,183 @@ li:hover > .b-content-services_icon:before {
     background: #ee1d23;
     cursor: pointer;
 }
+
+.b-left-recomendation {
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.b-left-recomendation_head {
+    background: #d73f3c;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    border-top: 2px solid #A6211F;
+}
+
+.b-left-recomendation_head:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #d73f3c;
+    bottom: -16px;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+}
+
+.b-left-recomendation_item {
+    position: relative;
+    min-height: 80px;
+    margin-top: 15px;
+}
+
+.b-left-recomendation_item_img {
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.b-left-recomendation_item_img img {
+    width: 100%;
+    height: auto;
+}
+
+.b-left-recomendation_item_description {
+    padding-left: 80px;
+}
+
+.b-left-recomendation_item_description h6 {
+    color: #286804;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.b-left-recomendation_item_description small {
+    font-size: 12px;
+    color: #c9c9c9;
+}
+.b-left-recomendation_item_description p {
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    line-height: 13px;
+}
+
+.b-left-recomendation_item_price {
+    border-top: 1px solid #f7f8fc;
+    border-bottom: 1px solid #f7f8fc;
+    line-height: 52px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #547711;
+    padding: 0 10px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.b-left-recomendation_item_price strong {
+    font-weight: 500;
+}
+
+.b-left-recomendation_item_star {
+    width: 10px;
+    height: 10px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.b-left-recomendation .b-product-item_cart {
+    background: #d73f3c;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background 0.2s;
+    border: 1px solid #d73f3c;
+}
+
+.b-left-recomendation_item__big .b-left-recomendation_item_img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.b-left-recomendation_item__big .b-left-recomendation_item_description {
+    padding-left: 10px;
+}
+
+.b-left-recomendation_item__big h6 {
+    margin-bottom: 5px;
+}
+
+.b-left-recomendation_item__big .b-left-recomendation_item_price {
+    padding-top: 10px;
+    line-height: 42px;
+}
+
+.b-left-recomendation_item__big .b-left-recomendation_item_price span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #525252;
+    line-height: 14px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.b-left-recomendation_head__big {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
