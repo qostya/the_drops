@@ -643,17 +643,22 @@ li:hover > .b-content-services_icon:before {
 }
 
 
-.b-product-item_description span {
+.b-product-item_description span a {
     color: #7a7a7a;
+    text-decoration: none;
     font-size: 14px;
 }
 
 .b-product-item_description h5 {
-    color: #286804;
     font-size: 16px;
     font-weight: 400;
     margin: 3px 0;
     line-height: 18px;
+}
+
+.b-product-item_description h5 a {
+    color: #286804;
+    text-decoration: none;
 }
 
 .b-product-item_description small {
@@ -661,11 +666,11 @@ li:hover > .b-content-services_icon:before {
     font-size: 12px;
 }
 
-.b-product-item:hover .b-product-item_description span {
+.b-product-item:hover .b-product-item_description span a {
     color: #e3fbb4;
 }
 
-.b-product-item:hover .b-product-item_description h5 {
+.b-product-item:hover .b-product-item_description h5 a {
     color: #fff;
 }
 
