@@ -1573,6 +1573,21 @@ li:hover > .b-content-services_icon:before {
     font-weight: 200;
 }
 
+.b-catalog-item {
+    position: relative;
+}
+
+.b-catalog-item_title {
+    color: #d73f3c;
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    top: -35px;
+    line-height: 30px;
+    margin: 0;
+}
+
 .b-catalog-item_left {
     width: 35%;
     background: #fff;

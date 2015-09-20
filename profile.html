@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="js/vendor/bxslider-4/dist/jquery.bxslider.min.css"/>
+    <link rel="stylesheet" href="css/inline-images.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+
+<header class="b-header">
+    <div class="b-header_top">
+        <div class="container">
+            <nav>
+                <div class="row">
+                    <ul class="nav nav__left navbar-nav col-md-10 col-sm-10">
+                        <li><a href="#"><span>О компании</span></a></li>
+                        <li><a href="#"><span>Доставка</span></a></li>
+                        <li><a href="#"><span>Оплата</span></a></li>
+                        <li><a href="#"><span>Контакты</span></a></li>
+                        <li class="b-header_search">
+                            <form action="/" method="get">
+                                <button type="submit" class="b-header_search_icon js-show-target" value=""></button>
+                                <div class="b-header_search_field js-show-element">
+                                    <input type="text" placeholder="Поиск"/>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="nav nav__right navbar-nav navbar-right col-md-2 col-sm-2">
+                        <li class="fl-r">
+                            <span class="b-header_top_login-icon">
+                                <a href="">Вход</a> / <a href="">Регистрация</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="b-header_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_phone">
+                        <div class="b-header_icon">
+                            <i class="icon__phone"></i>
+                        </div>
+                        <div class="b-header_phone_numbers">
+                            <a href="#">7 (546) 850-65-98</a><br/>
+                            <a href="#">7 (340) 875-32-52</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_email">
+                        <div class="b-header_icon">
+                            <i class="icon__envelope"></i>
+                        </div>
+                        <div class="b-header_email_links">
+                            <a href="mailto:info@mamori.ru">info@mamori.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix hidden-md hidden-lg"></div>
+                <div class="col-md-6 col-xs-6">
+                    <div class="b-header_logo">
+                        <a href="#" class="b-header_logo_image">Mamori</a>
+                    </div>
+                    <div class="b-header_location">
+                        <i class="b-header_location_icon"></i>
+                        <span class="b-header_location_current-city">Хабаровск</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="b-header_cart clearfix js-has-dropdown">
+                        <div class="b-header_cart_left">
+                            <i class="b-header_cart_icon"></i>
+                            <div class="b-header_cart_count">8</div>
+                        </div>
+                        <div class="b-header_cart_right">
+                            <span class="b-header_cart_title">В КОРЗИНЕ</span>
+                            <div class="b-header_cart_price">
+                                <strong>980</strong> руб
+                            </div>
+                        </div>
+
+                        <div class="b-cart_bottom js-dropdown">
+                            <form action="/">
+                                <table class="b-cart-table" border="0">
+                                    <tbody><tr>
+                                        <td class="b-cart-table_title">
+                                            <a href="#">Orihiro Глюкозамин</a>
+                                        </td>
+                                        <td class="b-cart-table_count">
+                                            <div><input type="text" value="1" maxlength="2"></div>
+                                        </td>
+                                        <td class="b-cart-table_price">
+                                            <div>200 р</div>
+                                        </td>
+                                        <td class="b-cart-table_actions">
+                                            <i class="b-cart-table_remove">x</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="b-cart-table_title">
+                                            <a href="#">Tony Moly</a>
+                                        </td>
+                                        <td class="b-cart-table_count">
+                                            <div><input type="text" value="2" maxlength="2"></div>
+                                        </td>
+                                        <td class="b-cart-table_price">
+                                            <div>400 р</div>
+                                        </td>
+                                        <td class="b-cart-table_actions">
+                                            <i class="b-cart-table_remove">x</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="b-cart-table_issue" colspan="3"><div onclick="javascript:void(0);">ОФОРМИТЬ</div></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="b-catalog-content">
+    <div class="b-catalog-content_menu b-catalog-content_menu__green">
+        <div class="container">
+            <div class="row">
+                <ul class="b-content-menu clearfix">
+                    <li class="b-content-menu_item b-content-menu_item__first"><a href="#">Японские витамины</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__second"><a href="#">Японский коллаген</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__third"><a href="#">Капли для глаз</a></li>
+                    <li class="b-content-menu_item b-content-menu_item__fourth js-has-dropdown">
+                        <a href="#">Косметика</a>
+                        <div class="b-content-menu_dropdown js-dropdown">
+                            <ul>
+                                <li><a href="#">Уход за лицом</a></li>
+                                <li><a href="#">Уход за телом</a></li>
+                                <li><a href="#">Уход за волосами</a></li>
+                                <li><a href="#">Декоративная косметика</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-content_products">
+        <div class="container">
+            <div class="row">
+
+                <div class="b-catalog-header clearfix">
+                    <div class="col-md-6">
+                        <div class="b-catalog-header_breadcrumbs">
+                            <span class="b-catalog-header_title">Личный кабинет</span>
+                            <a href="#">Главная</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    asdasdasd
+                </div>
+
+                <div class="col-md-9 col-sm-8 col-xs-12">
+                    <div class="b-catalog-item clearfix">
+                        aasdasdassasdsad
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="b-footer">
+    <div class="b-footer_bg-1 hidden-xs"></div>
+    <div class="b-footer_bg-2 hidden-xs"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <h3 class="b-footer_sitename">mamori.ru</h3>
+                <span>© 2015 все права защищены</span>
+
+                <div class="b-footer_phones clearfix">
+                    <div class="b-footer_phone-icon"></div>
+                    <div class="b-footer_phone-numbers">
+                        <a href="#">7 (546) 850-65-98</a>
+                        <br/>
+                        <a href="#">7 (340) 875-32-52</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="b-footer_pay">
+                    Способы оплаты:
+                    <div class="b-footer_pay-methods clearfix">
+                        <a href="#" class="b-footer_icon b-footer_icon__visa"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__master-card"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__visa-election"></a>
+                        <div class="clearfix"></div>
+                        <a href="#" class="b-footer_icon b-footer_icon__yandex-money"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__web-money"></a>
+                        <a href="#" class="b-footer_icon b-footer_icon__paypal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="http://web-alt.ru" target="_blank" class="b-footer_studio">
+                    Сайт разработан <br/>
+                    WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<div class="b-left-catalog-links">
+    <ul>
+        <li><a href="#">Антиоксиданты</a></li>
+        <li class="b-left-catalog-links__current"><a href="#">Детские витамины</a></li>
+        <li><a href="#">Для активности</a></li>
+        <li><a href="#">Для беременных и корящих женщин</a></li>
+        <li><a href="#">Для мужской силы</a></li>
+        <li><a href="#">Для улучшения зрения</a></li>
+        <li><a href="#">Компллексные витамины и минералы</a></li>
+        <li><a href="#">От аллергии</a></li>
+        <li><a href="#">От похмельного синдрома</a></li>
+    </ul>
+
+    <div class="b-left-catalog-links_button js-open-left-panel">
+        <span>❮❮</span>
+        <div>категории каталога</div>
+    </div>
+</div>
+
+
+
+<script src="js/vendor/jquery/dist/jquery.min.js"></script>
+<script src="js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/vendor/bxslider-4/dist/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
