@@ -438,11 +438,23 @@ div:hover >  .b-header_location_current-city {
 
 .b-catalog-content_menu {
     line-height: 70px;
-    background: rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0.9);
     position: relative;
     z-index: 3;
     margin-top: 30px;
+}
+
+.b-catalog-content_menu.b-catalog-content_menu__green {
+    background: #8ab734;
+}
+
+.b-catalog-content_menu__green .b-content-menu_item > a {
+    color: #fff;
+    border-left: 1px solid #fff;
+}
+
+.b-catalog-content_menu__green .b-content-menu_item:hover > a {
+    background: #62871A;
 }
 
 .b-content-menu {
