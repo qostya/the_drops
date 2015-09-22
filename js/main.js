@@ -168,6 +168,33 @@ $(function ($) {
     }());
 
 
+    (function () {
+        $('.js-file-sibling').click(function () {
+            var $this = $(this),
+                $this_sibling_input = $this.siblings('input');
+
+            $this_sibling_input.click().change(function () {
+                var value = $this_sibling_input.val().replace(/.+[\\\/]/, "");
+                $this.siblings('span').text(value ? value : '\u041f\u0420\u0418\u041a\u0420\u0415\u041f\u0418\u0422\u0415 \u0424\u0410\u0419\u041b');
+            });
+        });
+    }());
+
+    (function (modals) {
+        $('.js-open-modal-exclusive').click(function () {
+            $('.b-modal-exclusive, .b-modals_bg').addClass('b-modal__active');
+            $('body').addClass('overflow-hidden');
+            return false;
+        });
+
+        $('.js-close-all-modals').click(function () {
+            $('.b-modal__active').removeClass('b-modal__active');
+            $('body').removeClass('overflow-hidden');
+            return false;
+        });
+    }());
+
+
 
     showByHoverSiblings('js-show-target', 'js-show-element');
 

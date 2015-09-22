@@ -2072,7 +2072,7 @@ a.b-exclusive_link:hover {
 }
 
 .b-visited-products_title {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background: #d73f3c;
 }
 
@@ -2084,23 +2084,118 @@ a.b-exclusive_link:hover {
     border-top-color: #d73f3c;
 }
 
+.b-modal-exclusive {
+    display: none;
+    width: 630px;
+    height: 455px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 100;
+}
 
+.b-modal-exclusive_wrapper {
+    padding: 35px 88px 15px;
 
+}
 
+.b-modal-exclusive_field {
+    margin-bottom: 10px;
+    position: relative;
+}
 
+.b-modal-exclusive_field input,
+.b-modal-exclusive_field textarea {
+    padding: 12px 8px 8px;
+    border: 1px solid #B0B0B0;
+    width: 100%;
+    position: relative;
+    outline: none;
+}
 
+.b-modal-exclusive_field input:focus,
+.b-modal-exclusive_field textarea:focus {
+    -webkit-box-shadow: 0 0 5px 0 #8ab734;
+    -moz-box-shadow: 0 0 5px 0 #8ab734;
+    box-shadow: 0 0 5px 0 #8ab734;
+    border-color: #8ab734;
+}
 
+.b-modal-exclusive_field_file input {
+    position: fixed;
+    left: -500px;
+    width: 10px;
+}
 
+.b-modal-exclusive_field_file > div {
+    padding: 12px 8px 8px;
+    width: 100%;
+    border: 1px solid #B0B0B0;
 
+}
 
+.b-modal-exclusive_field textarea {
+    height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    resize: none;
+    display: block;
+}
 
+.css-input-triangle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-right-color: #b40000;
+    border-bottom-color: #b40000;
+}
 
+.b-modal-exclusive_submit {
+    position: relative;
+    font-size: 13px;
+}
 
+.b-modal-exclusive_submit input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #d73f3c;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 22px 9px;
+}
 
+body.overflow-hidden {
+    overflow: hidden;
+    padding-right: 17px;
+}
 
+.b-modals_bg {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: 99;
+}
 
-
-
+.b-modal__active {
+    display: block;
+}
 
 
 

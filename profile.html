@@ -242,7 +242,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <div class="b-exclusive_icon b-exclusive_icon_hand"></div>
-                    <a href="#" class="b-exclusive_link">ОТПРАВИТЬ ЗАКАЗ</a>
+                    <a href="#" class="b-exclusive_link js-open-modal-exclusive">ОТПРАВИТЬ ЗАКАЗ</a>
                 </div>
             </div>
         </div>
@@ -392,10 +392,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 </section>
 
 <footer class="b-footer">
@@ -460,6 +456,35 @@
         <span>❮❮</span>
         <div>категории каталога</div>
     </div>
+</div>
+
+
+<div class="b-modals">
+    <div class="b-modal-exclusive">
+        <div class="b-modal-exclusive_wrapper">
+            <form action="/" method="post">
+                <div class="b-modal-exclusive_field css-input-triangle"><input type="text" placeholder="ФИО"/></div>
+                <div class="b-modal-exclusive_field css-input-triangle"><input type="text" placeholder="EMAIL"/></div>
+                <div class="b-modal-exclusive_field css-input-triangle"><input type="text" placeholder="ТЕМА"/></div>
+                <div class="b-modal-exclusive_field b-modal-exclusive_field_file">
+                    <div>
+                        <span>ПРИКРЕПИТЕ ФАЙЛ</span>
+                        <input type="file"/>
+                        <button class="js-file-sibling" type="button"></button>
+                    </div>
+                </div>
+                <div class="b-modal-exclusive_field css-input-triangle">
+                    <textarea placeholder="СООБЩЕНИЕ"></textarea>
+                </div>
+                <div class="b-modal-exclusive_submit">
+                    <div class="b-modal-exclusive_submit_message">Спасибо за ваше сообщение! В ближайшее время<br/>наш менеджер свяжется с вами и проконсультирует</div>
+                    <input type="submit" value="Отправить"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="b-modals_bg js-close-all-modals"></div>
 </div>
 
 
