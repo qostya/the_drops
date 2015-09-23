@@ -195,6 +195,14 @@ $(function ($) {
     }());
 
 
+    $('.js-change-count').click(function() {
+        var target_input = $(this).parents('.js-change-count_parent').find('input');
+        if ($(this).data('changeCount') === 'up') {
+            target_input.val(+target_input.val() + 1);
+        } else if (target_input.val() > 0) {
+            target_input.val(+target_input.val() - 1);
+        }
+    });
 
     showByHoverSiblings('js-show-target', 'js-show-element');
 
