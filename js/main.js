@@ -187,6 +187,12 @@ $(function ($) {
             return false;
         });
 
+        $('.js-open-waiting-modal').click(function () {
+            $('.b-modals-waiting, .b-modals_bg').addClass('b-modal__active');
+            $('body').addClass('overflow-hidden');
+            return false;
+        });
+
         $('.js-close-all-modals').click(function () {
             $('.b-modal__active').removeClass('b-modal__active');
             $('body').removeClass('overflow-hidden');

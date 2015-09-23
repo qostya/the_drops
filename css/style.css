@@ -2193,7 +2193,7 @@ body.overflow-hidden {
     z-index: 99;
 }
 
-.b-modal__active {
+div.b-modal__active {
     display: block;
 }
 
@@ -2420,20 +2420,116 @@ body.overflow-hidden {
 
 
 
+.b-cart-page-form {
+    position: relative;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.b-cart-page-form input {
+    padding: 0 10px;
+    border: 1px solid #B0B0B0;
+    height: 40px;
+    line-height: 41px;
+    display: block;
+    position: relative;
+}
+
+.b-cart-page-form_fio input,
+.b-cart-page-form_comment textarea {
+    width: 100%;
+}
+
+.b-cart-page-form_comment textarea {
+    padding: 10px;
+    border: 1px solid #B0B0B0;
+    resize: none;
+    display: block;
+}
+
+.b-cart-page-form_email input,
+.b-cart-page-form_phone input {
+    width: 100%;
+}
+
+.b-cart-page-form form > div {
+    margin-bottom: 10px;
+    position: relative;
+}
 
 
+.b-cart-page-form .b-cart-page-table_full-price_confirm {
+    top: auto;
+    bottom: 0;
+    margin-left: 0;
+}
 
+.css-triangle {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent #b40000 transparent;
+    bottom: 1px;
+    right: 1px;
+}
 
+.b-modals-waiting {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 620px;
+    height: 300px;
+    background: #fff;
+    z-index: 100;
+    display: none;
+}
 
+.b-modals-waiting_head {
+    padding: 30px 42px;
+}
 
+.css-text-green {
+    color: #009512;
+}
 
+.b-modals-waiting_body {
+    background: #f7d0cf;
+    padding: 20px 0;
+}
 
+.b-modals-waiting_body .b-catalog-header_date > div {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
 
+.b-modals-waiting_footer {
+    padding: 22px 42px;
+}
 
+.b-modals-waiting_footer a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+}
 
+.b-modals-waiting_footer__confirm {
+    background: #d73f3c;
+}
 
-
-
+.b-modals-waiting_footer__reject {
+    background: #8ab734;
+    float: right;
+}
 
 
 
@@ -2549,6 +2645,10 @@ body.overflow-hidden {
 
     .b-exclusive_icon_has_arrow:after {
         left: 115%;
+    }
+
+    .b-cart-page-form {
+        width: 100%;
     }
 }
 
