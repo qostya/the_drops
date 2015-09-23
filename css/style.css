@@ -2518,12 +2518,21 @@ div.b-modal__active {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 15px 40px 13px;
     display: inline-block;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
 }
 
 .b-modals-waiting_footer__confirm {
     background: #d73f3c;
+}
+
+.b-modals-waiting_footer__confirm:hover {
+    background: #c70b45;
 }
 
 .b-modals-waiting_footer__reject {
@@ -2531,8 +2540,24 @@ div.b-modal__active {
     float: right;
 }
 
+.b-modals-waiting_footer__reject:hover {
+    background: #719c1e;
+}
 
 
+::-webkit-input-placeholder {
+    transition: text-indent 0.5s, color 0.5s;
+}
+
+input::-moz-placeholder {
+    color: #b2b2b2;
+    opacity: 1;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    text-indent: 10em;
+    color: transparent;
+}
 
 
 
