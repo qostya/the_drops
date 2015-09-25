@@ -605,6 +605,7 @@ li:hover > .b-content-services_icon:before {
 .b-product-item {
     background: #fff;
     margin-bottom: 20px;
+    display: block;
 }
 
 .b-product-item_image img {
@@ -716,6 +717,7 @@ li:hover > .b-content-services_icon:before {
 
 .b-product-item_image {
     position: relative;
+    display: block;
 }
 
 .b-product-item_stars {
@@ -1466,6 +1468,7 @@ li:hover > .b-content-services_icon:before {
     position: absolute;
     top: 0;
     left: 10px;
+    display: block;
 }
 
 .b-left-recomendation_item_img img {
@@ -1479,15 +1482,20 @@ li:hover > .b-content-services_icon:before {
 }
 
 .b-left-recomendation_item_description h6 {
-    color: #286804;
-    font-size: 14px;
-    font-weight: 400;
     margin: 0;
 }
 
-.b-left-recomendation_item_description small {
+.b-left-recomendation_item_description h6 a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #286804;
+}
+
+.b-left-recomendation_item_description small a {
     font-size: 12px;
     color: #c9c9c9;
+    text-decoration: none;
 }
 .b-left-recomendation_item_description p {
     font-size: 12px;
@@ -1513,7 +1521,7 @@ li:hover > .b-content-services_icon:before {
     font-weight: 500;
 }
 
-.b-left-recomendation_item_star {
+i.b-left-recomendation_item_star {
     width: 10px;
     height: 10px;
     -webkit-background-size: contain;
@@ -1613,6 +1621,7 @@ li:hover > .b-content-services_icon:before {
     height: 60px;
     background: #8ab734;
     padding-top: 21px;
+    cursor: pointer;
 }
 
 .b-catalog-item_right_cart {

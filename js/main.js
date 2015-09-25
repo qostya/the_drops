@@ -31,6 +31,7 @@ $(function ($) {
     }
 
     showChildByHoveredParent('js-hovered-parent', 'js-hovered-parent_dropdown');
+    showChildByHoveredParent('js-hovered-parent-cart', 'js-hovered-parent_dropdown-cart');
 
     (function () {
         var sett;
@@ -144,6 +145,7 @@ $(function ($) {
             }
 
             // here must be ajax
+            return false;
         });
 
         $('.b-product-item_star').hover(function () {
@@ -162,6 +164,42 @@ $(function ($) {
                     $this_parent_children.eq(i).addClass('b-product-item_star__gold');
                 } else {
                     $this_parent_children.eq(i).removeClass('b-product-item_star__gold');
+                }
+            }
+        });
+    }());
+
+
+
+    (function () {
+        $('.b-catalog-item_left_stars').each(function (id, item) {
+            item.dataset.starscount = $(item).children('.b-catalog-item_left_star_gold').length;
+        }).click(function (ev) {
+            var $this = $(ev.target);
+            if ($this.hasClass('b-catalog-item_left_star')) {
+                $this.parent().data('starscount', $this.index() + 1);
+            }
+
+            // here must be ajax
+            return false;
+        });
+
+        $('.b-catalog-item_left_star').hover(function () {
+            var $this = $(this);
+            $this.addClass('b-catalog-item_left_star_gold')
+                .prevAll()
+                .addClass('b-catalog-item_left_star_gold');
+            $this.nextAll()
+                .removeClass('b-catalog-item_left_star_gold');
+        }, function () {
+            var $this = $(this),
+                $this_parent = $this.parent(),
+                $this_parent_children = $this_parent.children();
+            for (var i = 0, l = +$this_parent.data('starscount'); 5 > i; i++) {
+                if (i < l) {
+                    $this_parent_children.eq(i).addClass('b-catalog-item_left_star_gold');
+                } else {
+                    $this_parent_children.eq(i).removeClass('b-catalog-item_left_star_gold');
                 }
             }
         });
