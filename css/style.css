@@ -2587,6 +2587,137 @@ input::-moz-placeholder {
     color: transparent;
 }
 
+.b-login {
+    position: relative;
+    width: 400px;
+    margin-bottom: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.b-login form > div {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.b-login input {
+    padding: 0 10px;
+    border: 1px solid #B0B0B0;
+    height: 40px;
+    line-height: 41px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.b-login div > input:focus {
+    -webkit-box-shadow: 0 0 5px 0 #8ab734;
+    -moz-box-shadow: 0 0 5px 0 #8ab734;
+    box-shadow: 0 0 5px 0 #8ab734;
+    border-color: #8ab734;
+}
+
+.b-login .b-cart-page-table_full-price_confirm {
+    bottom: 0;
+    top: auto;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+}
+
+.b-login_links {
+    position: absolute;
+    bottom: 65px;
+    left: 100%;
+    width: 170px;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.b-login_checkbox {
+    line-height: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.b-login_checkbox input {
+    padding: 0;
+    border: none;
+    line-height: 14px;
+    display: inline;
+    position: relative;
+    margin-right: 18px;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.b-login_checkbox input:before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    margin-top: -8px;
+    margin-left: -8px;
+    z-index: 2;
+    border: 8px solid #fff;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s cubic-bezier(0.3,-0.25, 0.45, 2.40);
+    -moz-transition: all 0.2s cubic-bezier(0.3,-0.25, 0.45, 2.40);
+    -ms-transition: all 0.2s cubic-bezier(0.3,-0.25, 0.45, 2.40);
+    -o-transition: all 0.2s cubic-bezier(0.3,-0.25, 0.45, 2.40);
+    transition: all 0.2s cubic-bezier(0.3,-0.25, 0.45, 2.40);
+}
+
+.b-login_checkbox input:after {
+    content: '';
+    margin-top: -5px;
+    margin-left: -5px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 13px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 13px;
+    opacity: 1;
+}
+
+.b-login_checkbox input:checked:before {
+    border-width: 5px;
+    background: #000;
+}
+
+.b-login_checkbox input:checked:after {
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform: scale(2.75);
+    -moz-transform: scale(2.75);
+    -ms-transform: scale(2.75);
+    -o-transform: scale(2.75);
+    transform: scale(2.75);
+}
+
+.b-login button.b-login_password-revovery_button {
+    top: 70%;
+    right: 0;
+    left: auto;
+}
 
 
 
@@ -2755,6 +2886,15 @@ input::-moz-placeholder {
         top: 101%;
         left: auto;
         right: -1px;
+    }
+
+    .b-login_links {
+        bottom: -80px;
+        left: 0;
+    }
+
+    .b-login .b-cart-page-table_full-price_confirm {
+        top: 100%;
     }
 }
 
