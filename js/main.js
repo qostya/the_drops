@@ -259,8 +259,12 @@ $(function ($) {
                 slideWrapper.removeClass('b-left-recomendation__arrow-down__active');
             }
         });
-
     }());
+
+    $('.js-profile-edit').click(function () {
+        $('.b-profile_table').toggleClass('b-profile_table__edit-active');
+        return false;
+    });
 
 
     $('.js-change-count').click(function() {

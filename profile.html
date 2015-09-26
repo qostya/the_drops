@@ -192,29 +192,35 @@
                     <div class="b-catalog-item clearfix">
                         <div class="b-profile_right">
                             <div class="b-profile_table">
-                                <table>
-                                    <tr>
-                                        <td>Имя</td>
-                                        <td>Анатолий Мамори</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Телефон</td>
-                                        <td>+7 (924) 148-96-85</td>
-                                    </tr>
-                                    <tr>
-                                        <td>E-mail</td>
-                                        <td>mamori@ya.ru</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Логин</td>
-                                        <td>Mamori</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Дата рождения</td>
-                                        <td>15.04.1985</td>
-                                    </tr>
-                                </table>
-                                <a href="#" class="b-profile_table_edit">Редактировать данные</a>
+                                <form action="/" method="post">
+                                    <table>
+                                        <tr>
+                                            <td>Имя</td>
+                                            <td><span class="b-profile_table_data">Анатолий Мамори</span> <input type="text" placeholder="Имя" class="b-profile_table_field" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Телефон</td>
+                                            <td><span class="b-profile_table_data">+7 (924) 148-96-85</span>  <input type="text" placeholder="Телефон" class="b-profile_table_field" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>E-mail</td>
+                                            <td><span class="b-profile_table_data">mamori@ya.ru</span>  <input type="text" placeholder="E-mail" class="b-profile_table_field" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Логин</td>
+                                            <td><span class="b-profile_table_data">Mamori</span>  <input type="text" placeholder="Логин" class="b-profile_table_field" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Дата рождения</td>
+                                            <td><span class="b-profile_table_data">15.04.1985</span>  <input type="text" placeholder="Дата рождения" class="b-profile_table_field" /></td>
+                                        </tr>
+                                    </table>
+                                    <button class="b-profile_table_edit b-profile_table_edit__submit">Сохранить</button>
+
+                                    <button type="button" href="#" class="b-profile_table_edit b-profile_table_edit__submit js-profile-edit">Назад</button>
+
+                                    <a href="#" class="b-profile_table_edit b-profile_table_edit__edit js-profile-edit">Редактировать данные</a>
+                                </form>
                             </div>
                         </div>
                     </div>

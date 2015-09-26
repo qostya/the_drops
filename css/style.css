@@ -2027,11 +2027,14 @@ i.b-left-recomendation_item_star {
     background: #e7e9ed;
 }
 
-a.b-profile_table_edit {
+a.b-profile_table_edit,
+button.b-profile_table_edit {
     background: #dddddd;
     padding: 15px 25px;
     color: #fff;
     display: inline-block;
+    border: none;
+    outline: none;
     font-size: 13px;
     -webkit-transition: background 0.2s;
     -moz-transition: background 0.2s;
@@ -2040,7 +2043,8 @@ a.b-profile_table_edit {
     transition: background 0.2s;
 }
 
-a.b-profile_table_edit:hover {
+a.b-profile_table_edit:hover,
+button.b-profile_table_edit:hover {
     text-decoration: none;
     background: #d73f3c;
 }
@@ -2719,13 +2723,42 @@ input::-moz-placeholder {
     left: auto;
 }
 
+.b-profile_table_data {
+    display: inline-block;
+    padding: 5px;
+    margin-top: -5px;
+    margin-bottom: -4px;
+}
 
+button.b-profile_table_edit__submit {
+    display: none;
+}
 
+.b-profile_table_field {
+    display: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-top: -5px;
+    margin-bottom: -4px;
+    width: 215px;
+}
 
+.b-profile_table__edit-active .b-profile_table_data {
+    display: none;
+}
 
+.b-profile_table__edit-active .b-profile_table_field {
+    display: inline-block;
+}
 
+.b-profile_table__edit-active .b-profile_table_edit__submit {
+    display: inline-block;
+}
 
-
+.b-profile_table__edit-active .b-profile_table_edit__edit {
+    display: none;
+}
 
 
 
