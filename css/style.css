@@ -1430,6 +1430,25 @@ li:hover > .b-content-services_icon:before {
     background: #fff;
     margin-bottom: 40px;
     margin-right: -10px;
+    position: relative;
+}
+
+.b-left-recomendation_slide-wrapper {
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    -ms-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    transition: height 0.2s linear;
+}
+
+.b-left-recomendation__arrow-down__active + .b-left-recomendation__arrow-down {
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -ms-transform: scale(-1);
+    -o-transform: scale(-1);
+    transform: scale(-1);
 }
 
 .b-left-recomendation_head {
@@ -1459,14 +1478,14 @@ li:hover > .b-content-services_icon:before {
 .b-left-recomendation_item {
     position: relative;
     min-height: 80px;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .b-left-recomendation_item_img {
     width: 60px;
     height: 80px;
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 10px;
     display: block;
 }

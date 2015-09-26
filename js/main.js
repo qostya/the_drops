@@ -238,6 +238,30 @@ $(function ($) {
         });
     }());
 
+    (function () {
+        var slideWrapper = $('.b-left-recomendation_slide-wrapper'),
+            beforeHeight = slideWrapper.height(),
+            slideItems = $('.b-left-recomendation_has-slider').find('.b-left-recomendation_item'),
+            slideItemsFirst = slideItems.eq(0),
+            slideItemsSecond = slideItems.eq(1),
+            slideHeight = slideItemsFirst.outerHeight() + slideItemsSecond.outerHeight();
+
+        slideWrapper.height(slideHeight + 'px');
+        console.log(beforeHeight);
+
+        $('.b-left-recomendation__arrow-down').click(function () {
+            var $this = $(this);
+            if (!slideWrapper.hasClass('b-left-recomendation__arrow-down__active')) {
+                slideWrapper.height(beforeHeight);
+                slideWrapper.addClass('b-left-recomendation__arrow-down__active');
+            } else {
+                slideWrapper.height(slideHeight);
+                slideWrapper.removeClass('b-left-recomendation__arrow-down__active');
+            }
+        });
+
+    }());
+
 
     $('.js-change-count').click(function() {
         var target_input = $(this).parents('.js-change-count_parent').find('input');

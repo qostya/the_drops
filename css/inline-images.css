@@ -337,9 +337,25 @@ a.b-product-item_show-icon {
 
 }
 
+.b-left-recomendation__arrow-down {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAiCAYAAAAKyxrjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASZJREFUeNrsmE0OgjAQhYEFK6Jr93oH7kD0EB7AneESrjyAP4dQjqCegT0XYMXGOk2mSUNAWwotknnJSwzY136kmQ74jDFvygq8iYsACZAACZAACZAACbBVd/BywPXx7JtRAu9FDcxVgQ/gyDBLdoSZFc7ROasPQKECvAUHBnk+ZhS17FEACj3AcYesGMc2aVSAXG/wGbxQyOD/OeEY9i+AQiV4Dw4bxoZ4r1TIcQaYMTXl4EQal+A1FWUuAbnXmovVeSgb0/X1Vdb5dksVt5vKtk5btrUzQLlgXH4UjG+F6apYmJwByiX/qQH36ni0OAP08MBvOrT7bg6cAQrPam2X3N7Nh57ft/hddAU+4u8dOLcxqU1Aeh8kQAIkQAIkQAK0rI8AAwApqIhqqrhSdQAAAABJRU5ErkJggg==) no-repeat #db736a;
+    width: 56px;
+    height: 34px;
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    margin-left: -28px;
+    cursor: pointer;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
 
-
-
+.b-left-recomendation__arrow-down:hover {
+    background-color: #c70b45;
+}
 
 
 
