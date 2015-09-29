@@ -231,6 +231,12 @@ $(function ($) {
             return false;
         });
 
+        $('.js-open-modal-city').click(function () {
+            $('.b-modal-city, .b-modals_bg').addClass('b-modal__active');
+            $('body').addClass('overflow-hidden');
+            return false;
+        });
+
         $('.js-close-all-modals').click(function () {
             $('.b-modal__active').removeClass('b-modal__active');
             $('body').removeClass('overflow-hidden');
@@ -263,6 +269,7 @@ $(function ($) {
 
     $('.js-profile-edit').click(function () {
         $('.b-profile_table').toggleClass('b-profile_table__edit-active');
+        $('.b-profile_left_img').toggleClass('b-profile_left_img__active');
         return false;
     });
 
@@ -275,6 +282,46 @@ $(function ($) {
             target_input.val(+target_input.val() - 1);
         }
     });
+
+    $('.b-catalog-item_right_cart_to-stock').click(function () {
+        var $this_needed_parent = $(this).parents('.b-catalog-item_right_cart');
+        $this_needed_parent.addClass('b-catalog-item_right_cart__active');
+        setTimeout(function () {
+            $this_needed_parent.removeClass('b-catalog-item_right_cart__active');
+        }, 3000);
+        return false;
+    });
+
+    $('.js-profile-image-action').click(function () {
+        $('.js-profile-image-input').click();
+        return false;
+    });
+
+    (function () {
+        var sett;
+        $('.js-add-to-cart').click(function() {
+            var $this = $(this),
+                $popup_block = $('.js-in-cart-popup'),
+                $product_title = $this.parents('.js-product-in-cart').find('.js-product-title').text();
+            $this.toggleClass('js-add-to-cart--active');
+
+            clearTimeout(sett);
+
+            $popup_block.fadeIn();
+
+            if ($this.hasClass('js-add-to-cart--active')) {
+                $popup_block.html('Товар <span class="css-text-green">«' + $product_title + '»</span> <u>добавлен</u> в корзину.');
+            } else {
+                $popup_block.html('Товар <span class="css-text-green">«' + $product_title + '»</span> <u>удалён</u> из корзины.');
+            }
+
+            sett = setTimeout(function() {
+                $popup_block.fadeOut();
+            }, 2000);
+
+            return false;
+        });
+    }());
 
     showByHoverSiblings('js-show-target', 'js-show-element');
 

@@ -93,7 +93,8 @@
                         <div class="b-cart_bottom js-hovered-parent_dropdown-cart">
                             <form action="/">
                                 <table class="b-cart-table" border="0">
-                                    <tbody><tr>
+                                    <tbody>
+                                    <tr>
                                         <td class="b-cart-table_title">
                                             <a href="#">Orihiro Глюкозамин</a>
                                         </td>
@@ -175,8 +176,11 @@
 
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="b-profile_left">
-                        <div class="b-profile_left_img">
-                            <img src="http://placehold.it/155x155" alt=""/>
+                        <div class="b-profile_left_img js-profile-image-action">
+                            <div>
+                                <img src="http://placehold.it/155x155" alt=""/>
+                                <span>Редактировать</span>
+                            </div>
                         </div>
                         <div class="b-profile_left_points clearfix">
                             <div class="b-profile_left_points_count">
@@ -204,11 +208,11 @@
                                         </tr>
                                         <tr>
                                             <td>E-mail</td>
-                                            <td><span class="b-profile_table_data">mamori@ya.ru</span>  <input type="text" placeholder="E-mail" class="b-profile_table_field" /></td>
+                                            <td><span>mamori@ya.ru</span></td>
                                         </tr>
                                         <tr>
                                             <td>Логин</td>
-                                            <td><span class="b-profile_table_data">Mamori</span>  <input type="text" placeholder="Логин" class="b-profile_table_field" /></td>
+                                            <td><span>Mamori</span></td>
                                         </tr>
                                         <tr>
                                             <td>Дата рождения</td>
@@ -220,6 +224,9 @@
                                     <button type="button" href="#" class="b-profile_table_edit b-profile_table_edit__submit js-profile-edit">Назад</button>
 
                                     <a href="#" class="b-profile_table_edit b-profile_table_edit__edit js-profile-edit">Редактировать данные</a>
+
+
+                                    <input type="file" class="js-profile-image-input" />
                                 </form>
                             </div>
                         </div>
