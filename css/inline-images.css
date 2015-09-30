@@ -357,7 +357,15 @@ a.b-product-item_show-icon {
     background-color: #c70b45;
 }
 
-
+.b-content-title__icon-down span:after {
+    content: '';
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXpJREFUeNqslU9Og0AUxqfUuGPvvxXpwh0LdeEtaqImHsKFMVp7Aq261EuI1Rov4AE0gmtlJRQWrNiAgeD3zNBQGECLX/JL6Zvh4zFv5tHSdZ0JNA+6nE2wBL7AJ3gF9+CBYqqqTt04JzDbAuegI3jIKmcPvIMeuMtOkjLXbTDgEzqsXjRnaBjGALRFGZ6CI/Z3HfPfXjbDnRnNJqbIcpsuWigKrc0HWGHNZAFF4tk1NSMtg12Jb43/UpeKsiEaURSFybIsvMv3fWaapmhonTJcEC6IZbEkSQpxitm2XZbhosRPQEFhGDLP8wpxigVBUPrOZDguG3Rdl0VRNPkfx/FPrEJjMnwrGyWzrIHjOFMPEOiZDEdVM+gV6fXLliCnERlqvIsIRUWgApUVKbextbQoh1UzaZsQNTpAKwvTs3wDLhts6AuYafn2dQKuZjC7Bn1R+4rBPngCZ7/oidRg+8jstq5jD8EjbxrUvdf4wU8X/oV/AjTRofgWYABlz44Aeli8CgAAAABJRU5ErkJggg==) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
 
 
 
