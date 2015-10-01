@@ -237,6 +237,12 @@ $(function ($) {
             return false;
         });
 
+        $('.js-open-modal-history-info').click(function () {
+            $('.b-modal-history-info, .b-modals_bg').addClass('b-modal__active');
+            $('body').addClass('overflow-hidden');
+            return false;
+        });
+
         $('.js-close-all-modals').click(function () {
             $('.b-modal__active').removeClass('b-modal__active');
             $('body').removeClass('overflow-hidden');

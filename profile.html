@@ -72,7 +72,7 @@
                     <div class="b-header_logo">
                         <a href="#" class="b-header_logo_image">Mamori</a>
                     </div>
-                    <div class="b-header_location">
+                    <div class="b-header_location js-open-modal-city">
                         <i class="b-header_location_icon"></i>
                         <span class="b-header_location_current-city">Хабаровск</span>
                     </div>
@@ -242,29 +242,32 @@
                         <thead>
                         <tr align="center">
                             <th class="b-profile_history-table_code">Код</th>
-                            <th align="left" class="b-profile_history-table_name">Товар</th>
+                            <!--th align="left" class="b-profile_history-table_name">Товар</th-->
                             <th class="b-profile_history-table_count">Количество</th>
                             <th class="b-profile_history-table_price">Общая стоимость</th>
                             <th class="b-profile_history-table_status-icon">Отменен/<br/>Подтвержден</th>
                             <th class="b-profile_history-table_status">Статус</th>
+                            <th>Действия</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr align="center">
                             <td>057</td>
-                            <td align="left"><a href="#">Orihiro Глюкозамин в виде порошка</a></td>
+                            <!--td align="left"><a href="#">Orihiro Глюкозамин в виде порошка</a></td-->
                             <td><span class="b-profile_history-table_count">5 шт</span></td>
                             <td>670 руб</td>
                             <td><i class="b-profile_history-table_icon glyphicon glyphicon-remove"></i></td>
                             <td>Принят, ожидайте звонка</td>
+                            <td><a href="#" class="css-a-classic-link js-open-modal-history-info">Подробнее</a></td>
                         </tr>
                         <tr align="center">
                             <td>057</td>
-                            <td align="left"><a href="#">Orihiro Глюкозамин в виде порошка</a></td>
+                            <!--td align="left"><a href="#">Orihiro Глюкозамин в виде порошка</a></td-->
                             <td><span class="b-profile_history-table_count">5 шт</span></td>
                             <td>670 руб</td>
                             <td><i class="b-profile_history-table_icon glyphicon glyphicon-ok"></i></td>
                             <td>Собран, мы вас ждем</td>
+                            <td><a href="#" class="css-a-classic-link js-open-modal-history-info">Подробнее</a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -333,6 +336,7 @@
                             <div class="b-product-item_price">
                                 <strong>258</strong> руб
                             </div>
+                            <a href="#" class="b-product-item_bottom_buy">КУПИТЬ В<br/>1 КЛИК</a>
                             <a class="b-product-item_cart" href="#"></a>
                         </div>
                     </div>
@@ -366,40 +370,7 @@
                             <div class="b-product-item_price">
                                 <strong>258</strong> руб
                             </div>
-                            <a class="b-product-item_cart" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-3 col-xs-6">
-                    <div class="b-product-item">
-                        <div class="b-product-item_image">
-                            <a href="#"><img src="images/static/220x175.png" alt=""></a>
-                            <div class="b-product-item_stars" data-starscount="1">
-                                <i class="b-product-item_star b-product-item_star__gold"></i>
-                                <i class="b-product-item_star b-product-item_star__empty"></i>
-                                <i class="b-product-item_star b-product-item_star__empty"></i>
-                                <i class="b-product-item_star b-product-item_star__empty"></i>
-                                <i class="b-product-item_star b-product-item_star__empty"></i>
-                            </div>
-                            <div class="b-product-item_show">
-                                <div class="b-product-item_angle"></div>
-                                <a href="#" class="b-product-item_show-icon"></a>
-                            </div>
-                        </div>
-                        <div class="b-product-item_description">
-                            <div>
-                                <span class="b-product-item_tag"><a href="#">Косметология</a></span>
-                                <h5><a href="#">Orihiro Глюкозамин в виде порошка</a></h5>
-                                <small>От боли в суставах</small>
-                            </div>
-                        </div>
-                        <div class="b-product-item_bottom">
-                            <div class="b-product-item_price">
-                                <strong>258</strong> руб
-                            </div>
+                            <a href="#" class="b-product-item_bottom_buy">КУПИТЬ В<br/>1 КЛИК</a>
                             <a class="b-product-item_cart" href="#"></a>
                         </div>
                     </div>
@@ -434,6 +405,42 @@
                             <div class="b-product-item_price">
                                 <strong>258</strong> руб
                             </div>
+                            <a href="#" class="b-product-item_bottom_buy">КУПИТЬ В<br/>1 КЛИК</a>
+                            <a class="b-product-item_cart" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-product-item">
+                        <div class="b-product-item_image">
+                            <a href="#"><img src="images/static/220x175.png" alt=""></a>
+                            <div class="b-product-item_stars" data-starscount="1">
+                                <i class="b-product-item_star b-product-item_star__gold"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                                <i class="b-product-item_star b-product-item_star__empty"></i>
+                            </div>
+                            <div class="b-product-item_show">
+                                <div class="b-product-item_angle"></div>
+                                <a href="#" class="b-product-item_show-icon"></a>
+                            </div>
+                        </div>
+                        <div class="b-product-item_description">
+                            <div>
+                                <span class="b-product-item_tag"><a href="#">Косметология</a></span>
+                                <h5><a href="#">Orihiro Глюкозамин в виде порошка</a></h5>
+                                <small>От боли в суставах</small>
+                            </div>
+                        </div>
+                        <div class="b-product-item_bottom">
+                            <div class="b-product-item_price">
+                                <strong>258</strong> руб
+                            </div>
+                            <a href="#" class="b-product-item_bottom_buy">КУПИТЬ В<br/>1 КЛИК</a>
                             <a class="b-product-item_cart" href="#"></a>
                         </div>
                     </div>
@@ -487,6 +494,7 @@
 </footer>
 
 
+
 <div class="b-modals">
     <div class="b-modal-exclusive">
         <div class="b-modal-exclusive_wrapper">
@@ -511,6 +519,91 @@
             </form>
         </div>
     </div>
+
+    <div class="b-modals-waiting">
+        <div class="b-modals-waiting_head">
+            Обратите внимание, товар  <span class="css-text-green">«Orihiro Глюкозамин в виде порошка»</span> на данный момент отсутствует на складе. Вы соласны ожидать?
+        </div>
+
+        <div class="b-modals-waiting_body">
+            <div class="b-catalog-header_date">
+                <strong>11</strong><br>
+                <span>сентября</span>
+                <div>
+                    Дата доставки<br>
+                    на склад
+                </div>
+            </div>
+        </div>
+
+        <div class="b-modals-waiting_footer">
+            <a class="b-modals-waiting_footer__confirm js-close-all-modals" href="#">Нет, вернуться</a>
+            <a class="b-modals-waiting_footer__reject js-close-all-modals" href="#">Да, оформить</a>
+        </div>
+    </div>
+
+
+    <div class="b-modal-city b-modal-city__3cols">
+        <h2 class="b-modal-city_title">Выберите ваш город</h2>
+        <div class="b-modal-city_2cols clearfix">
+            <div class="b-modal-city_col b-modal-city_col__3">
+                <ul>
+                    <li><a href="#">Первый</a></li>
+                    <li><a href="#">Второй</a></li>
+                    <li><a href="#">Третий</a></li>
+                    <li><a href="#">Четвертый</a></li>
+                    <li class="b-modal-city_city-active"><a href="#">Первый</a></li>
+                    <li><a href="#">Второй</a></li>
+                    <li><a href="#">Третий</a></li>
+                    <li><a href="#">Четвертый</a></li>
+                    <li><a href="#">Первый</a></li>
+                </ul>
+            </div>
+            <div class="b-modal-city_col b-modal-city_col__3">
+                <ul>
+                    <li><a href="#">Первый</a></li>
+                    <li><a href="#">Второй</a></li>
+                    <li><a href="#">Третий</a></li>
+                    <li><a href="#">Четвертый</a></li>
+                    <li><a href="#">Первый</a></li>
+                    <li><a href="#">Второй</a></li>
+                </ul>
+            </div>
+            <div class="b-modal-city_col b-modal-city_col__3">
+                <ul>
+                    <li><a href="#">Первый</a></li>
+                    <li><a href="#">Второй</a></li>
+                    <li><a href="#">Третий</a></li>
+                    <li><a href="#">Четвертый</a></li>
+                    <li><a href="#">Первый</a></li>
+                    <li><a href="#">Второй</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b-modal-history-info">
+        <h2 class="b-modal-city_title">Информация о заказе № 4</h2>
+        <table class="b-profile_history-table">
+            <thead>
+            <tr align="center">
+                <th class="b-profile_history-table_name">Наименование</th>
+                <th class="b-profile_history-table_count">Количество</th>
+                <th class="b-profile_history-table_price">Стоимость</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr align="center">
+                <td ><a href="#">Orihiro Глюкозамин в виде порошка</a></td>
+                <td><span class="b-profile_history-table_count">5 шт</span></td>
+                <td>670 руб</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="b-popup_in-cart js-in-cart-popup"></div>
 
     <div class="b-modals_bg js-close-all-modals"></div>
 </div>

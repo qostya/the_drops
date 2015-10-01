@@ -164,7 +164,8 @@ li:hover > .b-content-services_icon_delivery {
 }
 
 .b-left-recomendation .b-product-item_cart,
-.b-product-item_cart:hover:after {
+.b-product-item_cart:hover:after,
+.b-catalog-item_right_cart_to-stock:hover .b-product-item_cart:after {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWtJREFUeNrslr9LQlEUgH0qEQlNObQ1BhaOLQVuzUFDc0u4CS39CwXRVIsE/Vr8EyIoKwgiKCkpBwmKmvoBUpBR+PoOHMFF37txKYd74ONefJdzv3e856rn+37kP8NzAk7ACTiBdgKVzESFYQgaEIXV4eLx/F8KbDAk4RPGoA7T8KhCgbnhHem3ToviHZ7NQowEX8jkmC/BFtQMBO5g5lcCbNzQ8kucwguMGFa4N2hBNGSiqpbeNDZtCcjbXxtu/goHVgT06ziHbwOBI7i1VQGJSz2AYWNPusCmwBU8hFx7D4dULvCWi4fdnWRPtGOZaVqSQ0naFHxtueZmg3ChBzdiTUCjWYEBOIMbraKnLZuAOcjK5wgvI/5hRYBk/QzjkNcTvtNm6S6sgVzbJ7BvqwLyhj0tpZbW3FaZmFZhSufPui7wjBn9GlKFSYYV6IMFKLQeNJ6PMqxDSq/uRZ7X3f8BJ+AEnEBXC/wIMABlPZ4nrgluvwAAAABJRU5ErkJggg==) no-repeat, transparent;
 }
 
@@ -334,7 +335,15 @@ a.b-product-item_show-icon {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAoCAYAAABnyQNuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAatJREFUeNrsmL1KA0EQx+9y0aBBjDlFEVGsfAI7W3tfQ3wNKx9C0MRa/MDC1s4n0MZWRaKixfmRy/ofmIBNcrO3cwkHO/Dr5m5/O7u52U1ojAnKEpWgROFlvayXLTCqCu+IwTVYBemAnAg8g23wOE5ZWp1FMJ+RF7qupNY2SJVyCpcNeZmzIhLm+a+Bl/WyZZXtAemhuDvqDlYDM/zJSrkZRMLCLICEx6UJfoJv8Tcyx01hBxyBL64qiTYFwpTb4QnSROtgF7TFI5OsJU1wYtzjCizZjJ1HlqiDloPoOU86GIUsMQXaOUTPwGyeMV1k+8Ity4rO5R3PVba/JY4FohcgdhlLQ1ayhy9dKmorG/MPojokpzagwrRHG0Oei/jdsZbsHbgFG4I9fPhP9FRQ0XVwA+6zPKQdbA28gcmMPOpOe+ABTIMD8J7xzARYBita7faH+3pPkEvC+5Zni1TSdiuWL00KOEwlwiKIK9vl/r/FfT1UEiXJTT7g/GodZDos+8H3fg1hw9A1vgFe+T8I58o+8b6K+MegGbRqL4z6EdFfa7ysl/WyY44/AQYAuHmbok7u61oAAAAASUVORK5CYII=) no-repeat center center #8ab734;
     border: none;
     outline: none;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
 
+.b-modal-exclusive_field_file button:hover {
+    background-color: #62871A;
 }
 
 .b-left-recomendation__arrow-down {
